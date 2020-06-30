@@ -1,3 +1,8 @@
 module Rulers
-  VERSION = "0.1.0"
+  class Application
+    def call(env)
+      [200, {'Content-Type' => 'text/html'},
+      ["Hello from Ruby on Rulers!"]]
+    end
+  end
 end
